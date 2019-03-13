@@ -1,0 +1,39 @@
+.navhome {
+    border: 10px;
+    background-color:silver;
+}
+.dropdown-menu li:hover{
+    background-color: silver;
+    
+}
+
+.congres113:hover{
+    background-color: #696969;
+}
+body{
+   font-family: 'Laila', serif;
+}
+table tr:hover{
+    background-color: #696969;
+    color: aliceblue;
+   
+    
+
+}
+table tr a:hover{
+    color: white;
+    
+    
+}
+.filtros{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+select{
+    border-radius: 40%;
+    color: yellow;
+    background-color: black;
+    
+}
