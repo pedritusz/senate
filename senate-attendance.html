@@ -196,8 +196,9 @@
                     </thead>
                     <tbody>
                         <tr v-for='elementos of todosLosDatos.top10'>
-                            <td>{{elementos.first_name}} {{elementos.middle_name || ' '}}</td>
-                            <td>{{elementos.missed_votes}}%</td>
+                            <td><a v-bind:href="elementos.url">{{elementos.first_name}}
+                                    {{elementos.middle_name || ' '}}</a></td>
+                            <td>{{elementos.missed_votes}}</td>
                             <td>{{elementos.missed_votes_pct}}%</td>
                         </tr>
                     </tbody>
@@ -222,8 +223,9 @@
                     </thead>
                     <tbody>
                         <tr v-for='elementos of todosLosDatos.bottom10 '>
-                            <td>{{elementos.first_name}} {{elementos.middle_name || ' '}}</td>
-                            <td>{{elementos.missed_votes}}%</td>
+                            <td><a v-bind:href="elementos.url">{{elementos.first_name}}
+                                    {{elementos.middle_name || '   '}}</a></td>
+                            <td>{{elementos.missed_votes}}</td>
                             <td>{{elementos.missed_votes_pct}}%</td>
                         </tr>
                     </tbody>

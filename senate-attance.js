@@ -38,6 +38,11 @@ function calcrepublicanos(datos) {
         }
         else { }
 
+
+
+
+
+
     }
 
     return republicanos;
