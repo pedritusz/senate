@@ -186,15 +186,20 @@
                 <h2>Least Engaged (Bottom 10% Attenance)</h2>
                 <table>
                     <thead>
-                        <tr v-for='elementos of todosLosDatos.top10'>
-                            <th>{{elementos.first_name}} {{elementos.middle_name || ' '}}</th>
-                            <th>{{elementos.missed_votes}}%</th>
-                            <th>{{elementos.missed_votes_pct}}%</th>
+                        <tr>
+
+                            <th>name</th>
+                            <th>no. party votes</th>
+                            <th>% party votes</th>
                         </tr>
 
                     </thead>
-                    <tbody id="tabla2">
-
+                    <tbody>
+                        <tr v-for='elementos of todosLosDatos.top10'>
+                            <td>{{elementos.first_name}} {{elementos.middle_name || ' '}}</td>
+                            <td>{{elementos.missed_votes}}%</td>
+                            <td>{{elementos.missed_votes_pct}}%</td>
+                        </tr>
                     </tbody>
                     <tfoot>
 
@@ -206,15 +211,21 @@
                 <h2>Least Engaged (top 10% Attenance)</h2>
                 <table>
                     <thead>
-                        <tr v-for='elementos of todosLosDatos.bottom10 '>
-                            <th>{{elementos.first_name}} {{elementos.middle_name || ' '}}</th>
-                            <th>{{elementos.missed_votes}}%</th>
-                            <th>{{elementos.missed_votes_pct}}%</th>
+                        <tr>
+
+                            <th>name</th>
+                            <th>no. party votes</th>
+                            <th>% party votes</th>
                         </tr>
 
-                    </thead>
-                    <tbody id="tabla3">
 
+                    </thead>
+                    <tbody>
+                        <tr v-for='elementos of todosLosDatos.bottom10 '>
+                            <td>{{elementos.first_name}} {{elementos.middle_name || ' '}}</td>
+                            <td>{{elementos.missed_votes}}%</td>
+                            <td>{{elementos.missed_votes_pct}}%</td>
+                        </tr>
                     </tbody>
                     <tfoot>
 

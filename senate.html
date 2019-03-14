@@ -68,7 +68,7 @@
 
                 </li>
 
-                <div  class=" btn-group">
+                <div class=" btn-group">
                     <button type="button" class="btn btn-default dropdown-toggle congres113" data-toggle="dropdown">
                         congres 113 <span class="caret"></span>
                     </button>
@@ -229,11 +229,11 @@
 
                     <tr>
 
-                        <td>First name</td>
-                        <td>Party</td>
-                        <td>State</td>
-                        <td>Years in office</td>
-                        <td>% Votes w/ Party</td>
+                        <th>First name</th>
+                        <th>Party</th>
+                        <th>State</th>
+                        <th>Years in office</th>
+                        <th>% Votes w/ Party</th>
 
 
 
@@ -245,7 +245,7 @@
 
                     <tr v-for='item of senadores'>
 
-                        <td>{{item.first_name}}</td>
+                        <td><a v-bind:href='item.url'>{{item.first_name}} {{item.middle_name || ' '}}</a></td>
                         <td>{{item.party}}</td>
                         <td>{{item.state}}</td>
                         <td>{{item.seniority}}</td>
